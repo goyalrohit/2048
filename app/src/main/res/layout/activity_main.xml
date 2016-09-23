@@ -1,0 +1,28 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >-->
+
+    <RelativeLayout android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:background="@color/backgroundapp"
+        tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/mainWebView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/adView" />
+
+
+    <!--<LinearLayout android:gravity="bottom" android:id="@+id/ad_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingLeft="0dp" android:paddingRight="0dp">-->
+        <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/adbMobUnitId" xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+  <!--  </LinearLayout>-->
+    </RelativeLayout>
+<!--
+</LinearLayout>-->
